@@ -1,10 +1,9 @@
 import { InMemoryOrgsRepository } from '@/repositories/in-memory/in-memory-orgs-repository'
-import { OrgsRepository } from '@/repositories/orgs-repository'
 import { beforeEach, describe, expect, it } from 'vitest'
 import { CreateOrgService } from './create-org'
 
 describe('Create Org', () => {
-  let orgsRepository: OrgsRepository
+  let orgsRepository: InMemoryOrgsRepository
   let sut: CreateOrgService
 
   beforeEach(() => {
